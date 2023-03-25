@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import Logo from "../assets/logo.svg";
 
 export default function Header() {
-  const [theme, setTheme] = useState(
+  const [theme, setTheme] =
+    useState();
     // JSON.parse(localStorage.getItem("theme") || "light")
-  );
 
   useEffect(() => {
     // localStorage.setItem("theme", JSON.stringify(theme));
