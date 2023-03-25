@@ -5,10 +5,10 @@ import Logo from "../assets/logo.svg";
 export default function Header() {
   const [theme, setTheme] =
     useState();
-    // JSON.parse(localStorage.getItem("theme") || "light")
+    JSON.parse(localStorage.getItem("theme") || "light")
 
   useEffect(() => {
-    // localStorage.setItem("theme", JSON.stringify(theme));
+    localStorage.setItem("theme", JSON.stringify(theme));
     document.documentElement.removeAttribute("class");
     document.documentElement.classList.add(theme);
   }, [theme]);
